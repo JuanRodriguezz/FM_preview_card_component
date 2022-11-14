@@ -1,0 +1,133 @@
+body{
+    background-color: #f2ebe3;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    position: relative;
+}
+
+.card{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 45rem;
+    border-radius: 1rem;
+}
+
+.img-parfume{
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.img-parfume-mobile{
+    display: none;
+}
+
+.perfume{
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    letter-spacing: .3rem;
+    color: #6c7289;
+
+}
+
+.perfume-name{
+    padding-right: 2.4rem;
+    margin-bottom: 2rem;
+    line-height: 1;
+    font-weight: bolder;
+    font-family: 'Fraunces', serif;
+    font-size: 3rem;
+}
+
+.description{
+    padding-right: 2rem;
+    letter-spacing: .1rem;
+    color: #6c7289;
+}
+
+.card-footer{
+    border: none;
+}
+
+
+.offer-price{
+    font-family: 'Fraunces', serif;
+    color: #3c8067;
+    font-weight: bolder;
+    font-size: 2.2rem;
+    display: inline-block;
+    margin-right: 1rem ;
+}
+
+
+.original-price{
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+
+.btn-cart{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #3c8067;
+    color: #fff;
+    width: 90%;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+.btn-cart:hover{
+    color: #fff;
+    background-color: #2e473b;
+}
+
+
+
+@media(max-width: 991px){
+    .container{
+        position: relative;
+        padding: 0;
+        border: none;
+    }
+
+    .card{
+        width: 60%;
+    }
+
+    .img-parfume{
+        display: none;
+    }
+    
+
+    .img-parfume-mobile{
+        display: block;
+        width: 100%;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+    }
+
+    .btn-cart{
+        margin: 1.5rem auto;
+        width: 100%;
+    }
+    
+    
+}
+
+
+@media(max-width: 991px){
+    .card{
+        width: 80%;
+    }
+}
